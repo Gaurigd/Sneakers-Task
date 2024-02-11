@@ -1,0 +1,677 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Assigniment</title>
+</head>
+
+<body class="h-full w-full">
+    <!-- header -->
+    <div class="bg-[#FC1313] flex  md:flex-row justify-between items-center px-3 md:px-10 xl:h-[50px] py-1 w-full">
+        <div class="flex flex-wrap md:flex-nowrap md:flex-row gap-2 md:gap-4">
+            <h1 class="text-sm md:text-base text-[#FFFFFF] cursor-pointer">English</h1>
+            <h1 class="text-sm md:text-base text-[#FFFFFF] cursor-pointer">USD</h1>
+            <h1 class="text-sm md:text-base text-[#FFFFFF] cursor-pointer">Contact</h1>
+        </div>
+        <div class="hidden md:block">
+            <h1 class=" text-[#FFFFFF]">100% Secure delivery</h1>
+        </div>
+        <div class="flex gap-4 lg:gap-6">
+            <img src="images/wishlist.png" class=" h-3  w-3 lg:h-[23px] lg:w-[26px] cursor-pointer">
+            <img src="images/bag.png" class=" h-3 w-3 lg:h-[23px] lg:w-[26px] cursor-pointer">
+        </div>
+    </div>
+    <div
+        class="flex flex-row flex-wrap lg:flex-row h-[70px] lg:h-auto lg:items-center lg:justify-between px-0 lg:px-8 py-2">
+        <div class="flex items-center justify-between w-full px-5 lg:px-0 lg:w-auto">
+            <img src="images/logo.png" class="h-[50px] w-[200px]">
+            <!-- Three-line button for navigation on mobile -->
+            <button id="menuBtn" class="p-2 lg:hidden w-full flex justify-end lg:w-auto focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="navMenu"
+            class="bg-white  w-full  lg:w-auto z-10 flex flex-col lg:flex-row gap-5 lg:bg-transparent lg:flex lg:gap-10 xl:gap-8 justify-center items-center">
+            <h1
+                class="relative text-[#000000] text-center lg:text-start font-semibold cursor-pointer text-[#FC1313] border-b-2 border-[#FC1313]">
+                HOME
+
+                <span
+                    class="absolute top-[29px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#FC1313] rounded-full opacity-1 group-hover:opacity-100"></span>
+            </h1>
+            <h1
+                class="group text-black hover:border-b-2 hover:text-[#FC1313] hover:border-[#FC1313]  font-semibold text-center lg:text-left cursor-pointer relative">
+                MAN
+                <!-- White square for hover effect -->
+                <span
+                    class="absolute top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#FC1313] rounded-full opacity-0 group-hover:opacity-100"></span>
+            </h1>
+            <h1
+                class="group text-black hover:border-b-2 hover:text-[#FC1313] hover:border-[#FC1313]  font-semibold text-center lg:text-left cursor-pointer relative">
+                WOMAN
+                <!-- White square for hover effect -->
+                <span
+                    class="absolute top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#FC1313] rounded-full opacity-0 group-hover:opacity-100"></span>
+            </h1>
+            <h1
+                class="group text-black hover:border-b-2 hover:text-[#FC1313] hover:border-[#FC1313]  font-semibold text-center lg:text-left cursor-pointer relative">
+                KIDS
+                <!-- White square for hover effect -->
+                <span
+                    class="absolute top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#FC1313] rounded-full opacity-0 group-hover:opacity-100"></span>
+            </h1>
+            <div class="flex  justify-center items-center">
+                <!--  <h1 class="text-[#000000] hover:border-b-2 hover:text-[#FC1313] hover:border-[#FC1313]  font-semibold text-center lg:text-start cursor-pointer">SHOP</h1>
+                <select class=""></select> -->
+                <h1
+                    class="group text-black hover:border-b-2 hover:text-[#FC1313] hover:border-[#FC1313]  font-semibold text-center lg:text-left cursor-pointer relative">
+                    SHOP
+                    <!-- White square for hover effect -->
+                    <span
+                        class="absolute top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#FC1313] rounded-full opacity-0 group-hover:opacity-100"></span>
+                </h1>
+            </div>
+            <h1
+                class="group text-black hover:border-b-2 hover:text-[#FC1313] hover:border-[#FC1313]  font-semibold text-center lg:text-left cursor-pointer relative">
+                BLOG
+                <!-- White square for hover effect -->
+                <span
+                    class="absolute top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#FC1313] rounded-full opacity-0 group-hover:opacity-100"></span>
+            </h1>
+
+        </div>
+        <div class="hidden lg:block relative flex items-center lg:w-[344px]">
+            <input type="text" placeholder="Search here"
+                class="h-[54px] w-full lg:w-[344px] border border-black border-solid rounded-md px-4">
+            <div
+                class="absolute top-1 right-0 flex items-center justify-center mt-1 bg-[#FC1313] h-[40px] w-[40px] rounded-sm mr-3">
+                <img src="images/search.png" class="h-[16px] w-[16px]">
+            </div>
+        </div>
+        <div class="hidden lg:flex gap-2">
+            <div>
+                <img src="images/user.png" class="font-Padauk">
+            </div>
+            <div>
+                <h1 class="text-[#000000] text-[13px] cursor-pointer">Hello sign in</h1>
+                <h1 class="text-[#000000] font-bold tracking-tight cursor-pointer">Account & Lists</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle navigation menu on mobile
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.getElementById('menuBtn');
+            const navMenu = document.getElementById('navMenu');
+            menuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+
+
+
+
+    <!-- 1st section -->
+
+
+    <div class="flex flex-col xl:flex-row justify-center items-center gap-20 w-full py-5 lg:py-20">
+        <!-- leftside -->
+        <div class="flex flex-col md:flex-row gap-6 ">
+            <div class="flex flex-col ">
+                <div class="flex flex-col">
+                    <div class="flex  px-5 flex-col gap-6 pl-14">
+                        <label
+                            class="top-327 left-140  text-left text-xl lg:text-[39px] leading-3xl font-normal tracking-normal text-black opacity-100">New
+                            shoes collection</label>
+                        <p class="lg:text-[127px] text-[#010101] font-bold tracking-tight lg:w-[389px]">Live In Trend
+                        </p>
+                        <p class="text-[#999999] text-[20px] lg:w-[470px]">Lorem Ipsum is simply dummy text of the
+                            printing
+                            and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
+                        <button class="w-[200px] h-[50px] lg:h-[58px] lg:w-[197px] rounded-[15px] bg-[#FC1313]">
+                            <h1 class="text-[#FFFFFF] text-xl xl:text-[30px]">Shop Now</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row md:flex-col justify-center items-center gap-4 lg:gap-6 w-full">
+                <div class="bg-[#FFFFFF] -rotate-90 md:rotate-0 rounded-full p-1 lg:p-2  shadow-lg cursor-pointer">
+                    <i class="fa-solid fa-angle-up" style="font-size: 24px;"></i>
+                </div>
+                <div
+                    class="lg:h-[163px] lg:w-[177px] bg-[#FFFFFF] rounded-[20px] shadow-lg px-2 gap-4 flex flex-col justify-center items-center">
+                    <img src="images/shoes.png" class="flex justify-center items-center h-[76px] w-[141px]">
+                    <label
+                        class="text-sm md:text-lg lg:text-[25px] text-[#000000] font-bold flex justify-center items-center">Shoes
+                        Name</label>
+                </div>
+                <div
+                    class="lg:h-[163px] lg:w-[177px] bg-[#FFFFFF] rounded-[20px] shadow-lg px-2 gap-4 flex flex-col justify-center items-center">
+                    <img src="images/shoes-1.png" class="flex justify-center items-center h-[76px] w-[141px]">
+                    <label
+                        class=" text-sm md:text-lg lg:text-[25px] text-[#000000] font-bold flex justify-center items-center">Shoes
+                        Name</label>
+                </div>
+                <div
+                class="lg:h-[163px] lg:w-[177px] bg-[#FFFFFF] rounded-[20px] shadow-lg px-2 gap-4 flex flex-col justify-center items-center">
+                <img src="images/shoes-2.png" class="flex justify-center items-center h-[76px] w-[141px]">
+                <label
+                    class="text-sm md:text-lg lg:text-[25px] text-[#000000] font-bold flex justify-center items-center">Shoes
+                    Name</label>
+            </div>
+                <div class="bg-[#FFFFFF] -rotate-90 md:rotate-0 rounded-full p-1 lg:p-2 shadow-lg cursor-pointer">
+                    <i class="fa-solid fa-angle-down" style="font-size: 24px;"></i>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- right side -->
+        <div
+            class="bg-gradient-to-b from-white to-gray-200 lg:w-[861px] h-full  max-h-[870px] lg:flex justify-between items-center relative flex-col">
+            <div class="flex flex-col lg:flex-row lg:h-full lg:w-full">
+                <div class="lg:max-w-[100px] relative w-full h-full">
+                    <div class="color-slider-container  absolute h-full w-full color-hue">
+                        <input type="range" min="0" max="360" value="180"
+                            class="lg:rotate-90 w-[80vw] lg:w-[22vw] color-slider color-slider--hue" id="slider-hue">
+                    </div>
+
+                </div>
+                <div class="lg:pt-10">
+                    <img src="images/big-shoes.png" class=" w-[400px] lg:w-[564px] h-[150px] lg:h-[306px] mt-8">
+                    <img src="images/shadow.png" class="w-[664px] h-[150px]">
+                </div>
+            </div>
+            <div class="flex flex-col pb-10 w-full justify-center items-center">
+                <div class="flex gap-4 lg:gap-14 ">
+                    <div
+                        class="flex flex-col cursor-pointer items-center justify-center font-semibold text-[35px] hover:text-red-500 hover:-translate-y-8 transition-all duration-300">
+                        <h1>.</h1>
+                        <h1>36</h1>
+                    </div>
+                    <div
+                        class="flex flex-col cursor-pointer items-center justify-center font-semibold text-[35px] hover:text-red-500 hover:-translate-y-8 transition-all duration-300">
+                        <h1>.</h1>
+                        <h1>37</h1>
+                    </div>
+                    <div
+                        class="flex flex-col cursor-pointer items-center justify-center font-semibold text-[35px] hover:text-red-500 hover:-translate-y-8 transition-all duration-300">
+                        <h1>.</h1>
+                        <h1>38</h1>
+                    </div>
+                    <div
+                        class="flex flex-col cursor-pointer items-center justify-center font-semibold text-[35px] hover:text-red-500 hover:-translate-y-8 transition-all duration-300">
+                        <h1>.</h1>
+                        <h1>39</h1>
+                    </div>
+                    <div
+                        class="flex flex-col cursor-pointer items-center justify-center font-semibold text-[35px] hover:text-red-500 hover:-translate-y-8 transition-all duration-300">
+                        <h1>.</h1>
+                        <h1>40</h1>
+                    </div>
+                    <div
+                        class="flex flex-col cursor-pointer items-center justify-center font-semibold text-[35px] hover:text-red-500 hover:-translate-y-8 transition-all duration-300">
+                        <h1>.</h1>
+                        <h1>41</h1>
+                    </div>
+                    <div
+                        class="flex flex-col cursor-pointer items-center justify-center font-semibold text-[35px] hover:text-red-500 hover:-translate-y-8 transition-all duration-300">
+                        <h1>.</h1>
+                        <h1>42</h1>
+                    </div>
+                    <!-- Other number divs -->
+                </div>
+
+                <label class="text-[#FC1313] text-[20px] font-semibold">Size</label>
+                <div class="flex justify-between w-full px-5 md:px-10 lg:px-40">
+                    <h1 class="text-[20px] text-[#000000] font-semibold">Price Range</h1>
+                    <h1 class="text-[20px] text-[#000000] font-semibold">$50 to $150</h1>
+                </div>
+                <div class="price-range-slider mx-auto w-full max-w-[70%]  flex w-full pb-3">
+                    <div slider id="slider-distance" class="w-full">
+                        <div>
+                            <div inverse-left style="width:70%;"></div>
+                            <div inverse-right style="width:70%;"></div>
+                            <div range style="left:30%;right:40%;"></div>
+                            <span thumb class="!bg-black" style="left:30%;"></span>
+                            <span thumb style="left:60%;"></span>
+                            <div sign style="left:30%;">
+                                <span id="value">30</span>
+                            </div>
+                            <div sign style="left:60%;">
+                                <span id="value">60</span>
+                            </div>
+                        </div>
+                        <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+                            this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                            var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                            var children = this.parentNode.childNodes[1].childNodes;
+                            children[1].style.width=value+'%';
+                            children[5].style.left=value+'%';
+                            children[7].style.left=value+'%';children[11].style.left=value+'%';
+                            children[11].childNodes[1].innerHTML=this.value;" />
+
+                        <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+                            this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                            var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                            var children = this.parentNode.childNodes[1].childNodes;
+                            children[3].style.width=(100-value)+'%';
+                            children[5].style.right=(100-value)+'%';
+                            children[9].style.left=value+'%';children[13].style.left=value+'%';
+                            children[13].childNodes[1].innerHTML=this.value;" />
+                    </div>
+                </div>
+
+
+
+                <button class="h-full max-h-[60px] w-full  max-w-[276px] rounded-[15px] bg-[#FC1313]">
+                    <h1 class="text-[#FFFFFF] text-[33px]">Add to Cart</h1>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- 2nd section -->
+    <div class="py-5 lg:py-20 flex flex-col justify-center items-center">
+        <div class="flex justify-center items-center">
+            <label class="text-xl lg:text-[39px] text-[#010101] tracking-tight lg:h-[49px] lg:w-[193px] font-bold text-3xl leading-6 font-muli 
+                ">Our Brand</label>
+        </div>
+        <div class="flex flex-wrap xl:flex-row justify-center items-center gap-8 w-full">
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand1.png">
+                <p class="text-lg lg:text-2xl font-semibold">Adidas</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand2.png">
+                <p class="text-lg lg:text-2xl font-semibold">Jordan</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand3.png">
+                <p class="text-lg lg:text-2xl font-semibold">Puma</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand4.png">
+                <p class="text-lg lg:text-2xl font-semibold">Nike</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand5.png">
+                <p class="text-lg lg:text-2xl font-semibold">Reebok</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand6.png">
+                <p class="text-lg lg:text-2xl font-semibold">Converse</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand7.png">
+                <p class="text-lg lg:text-2xl font-semibold">Asics</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand8.png">
+                <p class="text-lg lg:text-2xl font-semibold">New balance</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="images/Brand9.png">
+                <p class="text-lg lg:text-2xl font-semibold">Vejas</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd section -->
+
+    <div id="slider-main" class="py-5 lg:py-20 px-8 lg:px-10 flex flex-col gap-8 lg:gap-20">
+        <div class="flex justify-center items-center pb-4">
+            <label class="text-xl lg:text-[39px] text-[#010101]  font-bold text-3xl lg:leading-6 font-muli 
+                ">Our Best Categories</label>
+        </div>
+        <div class="flex flex-wrap xl:flex-row gap-14 xl:gap-6 justify-center items-center">
+            <div class="relative flex flex-col gap-6">
+                <img src="images/rec-1.png" class="relative z-10">
+                <img src="images/rec-sho-1.png" class="absolute -top-16 -left-2 z-20">
+                <div class="">
+                    <p class="text-lg lg:text-[28px] font-semibold px-2 flex justify-center items-center">Plimsoll Sneaker</p>
+                </div>
+            </div>
+            <div class="relative flex flex-col gap-6">
+                <img src="images/rec-2.png" class="relative z-10">
+                <img src="images/rec-sho-2.png" class="absolute -top-16 -left-2 z-20">
+                <div class="">
+                    <p class="text-lg lg:text-[28px] font-semibold flex justify-center items-center">Slip on Sneaker</p>
+                </div>
+            </div>
+            <div class="relative flex flex-col gap-6 mt-4">
+                <img src="images/rec-3.png" class="relative z-10">
+                <img src="images/rec-sho-3.png" class="absolute -top-20 -left-2 z-20">
+                <div class="">
+                    <p class="text-lg lg:text-[28px] font-semibold flex justify-center items-center">Velcro Sneaker</p>
+                </div>
+            </div>
+            <div class="relative flex flex-col gap-6 mt-4">
+                <img src="images/recc.png" class="relative z-10">
+                <img src="images/rec-sho-4.png" class="absolute -top-20 -left-2 z-20">
+                <div class="">
+                    <p class="text-lg lg:text-[28px] font-semibold flex justify-center items-center">Retro Sneaker</p>
+                </div>
+            </div>
+            <div class="relative flex flex-col gap-6">
+                <img src="images/rec-5.png" class="relative z-10">
+                <img src="images/rec-sho-5.png" class="absolute -top-16 -left-2 z-20">
+                <div class="">
+                    <p class="text-lg lg:text-[28px] font-semibold flex justify-center items-center">Hiking Sneaker</p>
+                </div>
+            </div>
+            <div class="relative flex flex-col gap-6">
+                <img src="images/rec-6.png" class="relative z-10">
+                <img src="images/rec-sho-6.png" class="absolute -top-16 -left-2 z-20">
+                <div class="">
+                    <p class="text-lg lg:text-[28px] font-semibold flex justify-center items-center">Running Sneaker</p>
+                </div>
+            </div>
+            <div class="relative flex flex-col gap-6">
+                <img src="images/rec-7.png" class="relative z-10">
+                <img src="images/rec-sho-7.png" class="absolute -top-16 -left-2 z-20">
+                <div class="">
+                    <p class="text-lg lg:text-[28px] font-semibold flex justify-center items-center">Vans Sneaker</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+    <!-- 4th section -->
+    <div class="px-10 lg:px-20 flex flex-col gap-4">
+        <div class="flex justify-center items-center">
+            <label class="text-[39px]  text-[#010101]   lg:h-[49px] lg:w-[373px] font-bold text-xl lg:text-3xl lg:leading-6 font-muli  flex justify-center items-center
+                ">Upcoming Stock</label>
+        </div>
+        <div class="flex justify-center">
+            <div class=" flex flex-wrap justify-center items-center  py-6 gap-8">
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-1.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold lg:text-[24px]">Nike Kyrie 7 TB Midnight</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-2.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">Preventing Sneaker Bots</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-3.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">RS-X CNV Sneakers For Men</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-4.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">OZJI men's sneakers</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-5.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">Air jordan shoes</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-11.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">Nike air force shoes</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-7.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">EQT BASK ADV Sneakers</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <div
+                    class="lg:h-[489px] lg:w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-8.png"
+                            class="flex justify-center items-center lg:h-[272px] lg:w-[365px] ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">Air jordan shoes</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 ">
+                        <button
+                            class="lg:h-[42px] lg:w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+
+                <!--  
+                </div>
+               
+               
+                <div
+                    class="h-[489px] w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-11.png" class="flex justify-center items-center h-[272px] w-[365px]  ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">Air jordan shoes</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 ">
+                        <button
+                            class="h-[42px] w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <div
+                    class="h-[489px] w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-7.png" class="flex justify-center items-center h-[272px] w-[365px]  ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">Nike air force shoes</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 ">
+                        <button
+                            class="h-[42px] w-[169px] cursor-pointer bg-[#FC1313] rounded-md text-[17px] font-semibold text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div>
+                <div
+                    class="h-[489px] w-[395px] relative bg-[#FFFFFF] flex flex-col justify-between gap-6 rounded-[20px] border shadow-lg py-8 px-3">
+                    <div class="flex flex-col gap-2  ">
+                        <img src="images/stock-8.png" class="flex justify-center items-center h-[272px] w-[365px]  ">
+                        <img src="images/wishlist.png" class="absolute h-5 w-5 md:w-10 md:h-10 top-10 right-8">
+                        <p class="font-bold text-[24px]">EQT BASK ADV Sneakers</p>
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 ">
+                        <button
+                            class="h-[42px] w-[169px] cursor-pointer bg-[#FC1313] font-semibold rounded-md text-[17px] text-[#FFFFFF]">Add
+                            to Cart</button>
+                        <p class="text-[25px] font-semibold">$216.23</p>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include jQuery UI -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    $(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 130,
+            max: 500,
+            values: [130, 250],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+    });
+</script>
+
+
+</html>
